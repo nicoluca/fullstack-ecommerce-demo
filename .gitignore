@@ -1,0 +1,13 @@
+#### Angular
+angular-ecommerce/.angular
+angular-ecommerce/node_modules
+angular-ecommerce/ssl-localhost
+angular-ecommerce/src/environments/environment.ts
+angular-ecommerce/src/app/environment.prod.ts
+angular-ecommerce/package-lock.json
+angular-ecommerce/src/app/config/my-app-config.ts
+
+##### Spring
+springboot-ecommerce/src/main/resources/application.properties
+springboot-ecommerce/src/main/resources/luv2code-keystore.p12
+springboot-ecommerce/target

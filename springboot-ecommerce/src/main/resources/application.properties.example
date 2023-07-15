@@ -1,0 +1,60 @@
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://localhost:3306/full-stack-ecommerce?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=DATASOURCE-USERNAME
+spring.datasource.password=DATASOURCE-PASSWORD
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+spring.data.rest.base-path=/api
+
+# Auto restart server when code change
+spring.devtools.restart.enabled=true
+
+# Logging
+logging.level.root=WARN
+logging.level.org.springframework.web=INFO
+logging.level.org.hibernate=WARN
+
+# CORS
+allowed.origins=https://localhost:4200, http://localhost:4200
+
+spring.data.rest.detection-strategy=ANNOTATED
+
+okta.oauth2.client-id=OKTA-ID
+okta.oauth2.issuer=https://OKTA-URL/oauth2/default
+
+#####
+#
+# HTTPS configuration
+#
+#####
+
+# Server web port
+server.port=8443
+
+# QA Demo
+# server.port=9898
+
+# Enable HTTPS support (only accept HTTPS requests)
+server.ssl.enabled=true
+
+# Alias that identifies the key in the key store
+server.ssl.key-alias=KEY-ALIAS
+
+# Keystore location
+server.ssl.key-store=classpath:KEY-FILE
+
+# Keystore password
+server.ssl.key-store-password=PASSWORD
+
+# Keystore format
+server.ssl.key-store-type=PKCS12
+
+#####
+#
+# Payment Processing with Stripe
+#
+#####
+
+# Stripe API keys
+stripe.key.secret=SECRET-KEY
